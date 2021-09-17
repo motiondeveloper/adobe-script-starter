@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ES3",
     "moduleResolution": "node",
-    "noLib": true,
+    "lib": ["ES5"],
     "strict": true,
     "types": ["AfterEffects/2018"],
     "typeRoots": ["./node_modules/types-for-adobe/"]

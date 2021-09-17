@@ -4,8 +4,8 @@
   "description": "Setup for writing After Effects scripts in TypeScript",
   "main": "dist/script.jsx",
   "scripts": {
-    "build": "esbuild src/index.ts --bundle --platform=node --target=es5 --outfile=dist/script.jsx",
-    "dev": "rollup -cw",
+    "build": "swc src/index.ts -o dist/script.jsx",
+    "dev": "swc -w src/index.ts -o dist/script.jsx",
     "release": "npm run build && gh release create $npm_package_version $npm_package_main"
   },
   "author": "Tim Haywood",
@@ -14,8 +14,9 @@
     "aequery": "^0.6.0"
   },
   "devDependencies": {
-    "@rollup/plugin-typescript": "^8.2.5",
-    "esbuild": "^0.12.28",
+    "@swc/cli": "^0.1.49",
+    "@swc/core": "^1.2.88",
+    "chokidar": "^3.5.2",
     "rollup": "^2.56.3",
     "tslib": "^2.3.1",
     "types-for-adobe": "^6.0.1",
