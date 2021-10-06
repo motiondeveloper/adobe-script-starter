@@ -1,15 +1,16 @@
 {
-    "jsc": {
-      "parser": {
-        "syntax": "typescript"
-      },
-      "transform": null,
-      "target": "es3",
-      "loose": false,
-      "externalHelpers": false
+  "jsc": {
+    "parser": {
+      "syntax": "typescript"
     },
-    "module": {
-        "type": "commonjs",
-        "strictMode": false
-    }
+    "transform": null,
+    "target": "es3",
+    "loose": false,
+    "externalHelpers": false
+  },
+  "module": {
+    "type": "commonjs",
+    "strictMode": false,
+    "strict": true
   }
+}
