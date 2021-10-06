@@ -15,7 +15,7 @@ import * as aeq from "aequery";
     return;
   }
 
-  alert("You selected: ", layer.name);
+  alert("You selected: " + layer.name);
 
   app.endUndoGroup();
 })();
