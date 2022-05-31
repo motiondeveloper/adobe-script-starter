@@ -4,13 +4,15 @@ Basic setup for writing Adobe `.jsx` scripts in TypeScript with compilation to E
 
 ## Commands
 
-- `dev` compile script in watch mode
-- `build` compile script
+- `build` compile and bundle script
 - `release` create release on github with script attached
 
 ## Features
 
-- Modern JavaScript syntax compiled to ES3 (but no polyfills) and bundled using [SWC](https://github.com/swc-project/swc)
+- Modern JavaScript syntax compiled to ES3 and bundled using [SWC](https://github.com/swc-project/swc)
+
+  > Note: syntax is transformed, but no pollyfills/shims are included, so you won't be able to use features such as `Array.map` and so on. Hoping to add this ability via SWCs core-js integration in the future.
+
 - Types from [bbb999/Types-for-Adobe](https://github.com/bbb999/Types-for-Adobe)
 
   The types for After Effects are included by default. You can add programs in `tsconfig.json`, by adding them to `compilerOptions.types`.
