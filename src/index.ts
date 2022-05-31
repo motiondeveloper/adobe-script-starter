@@ -1,8 +1,9 @@
-import * as aeq from "aequery";
+import { message } from "./another";
 
 (function testScript() {
   const comp = app.project.activeItem;
   app.beginUndoGroup("Test Script");
+  alert(message);
   if (!(comp && comp instanceof CompItem)) {
     alert("Open a comp!");
     return;

@@ -9,8 +9,6 @@
     "externalHelpers": false
   },
   "module": {
-    "type": "commonjs",
-    "strictMode": false,
-    "strict": true
+    "type": "es6"
   }
 }
