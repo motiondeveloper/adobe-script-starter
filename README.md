@@ -1,6 +1,6 @@
 # Adobe Scripting Setup
 
-Basic setup for writing Adobe `.jsx` scripts in TypeScript with compilation to ES3 and bundling.
+A basic setup for writing Adobe `.jsx` scripts in TypeScript with compilation to ES3 and bundling. This project aims to be a simple and understandable setup for writing quick scripts.
 
 ## Commands
 
