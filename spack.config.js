@@ -8,5 +8,4 @@ module.exports = config({
     path: __dirname + "/dist",
     name: "script.jsx",
   },
-  module: {},
 });

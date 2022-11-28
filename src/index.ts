@@ -9,14 +9,10 @@ import { message } from "./another";
     return;
   }
 
-  const layer = comp.selectedLayers[0];
-
-  if (!layer) {
-    alert("No layer selected");
-    return;
-  }
-
-  alert("You selected: " + layer.name);
+  comp.selectedLayers.forEach((layer) => {
+    const is = layer.name ? "ya" : "no";
+    alert("You selected: " + layer.name + is);
+  });
 
   app.endUndoGroup();
 })();

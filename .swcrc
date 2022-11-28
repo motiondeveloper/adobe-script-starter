@@ -3,12 +3,15 @@
     "parser": {
       "syntax": "typescript"
     },
-    "transform": null,
     "target": "es3",
-    "loose": false,
+    "loose": true,
     "externalHelpers": false
   },
   "module": {
-    "type": "es6"
+    "type": "commonjs"
+  },
+  "env": {
+    "mode": "usage",
+    "coreJs": "3"
   }
 }

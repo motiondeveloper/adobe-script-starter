@@ -9,7 +9,9 @@
   },
   "author": "Tim Haywood",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "core-js": "^3.26.1"
+  },
   "devDependencies": {
     "@swc/cli": "^0.1.49",
     "@swc/core": "^1.2.88",
