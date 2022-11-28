@@ -8,7 +8,9 @@
     "externalHelpers": false
   },
   "module": {
-    "type": "commonjs"
+    "type": "commonjs",
+    "strict": true,
+    "strictMode": false
   },
   "env": {
     "mode": "usage",
